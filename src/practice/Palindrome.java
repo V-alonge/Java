@@ -14,9 +14,9 @@ public class Palindrome {
             result.append(initial.charAt(i));
         }
         if (initial.equals(result.toString())) {
-            System.out.printf(" %s is a palindrome ", result);
+            System.out.printf(" %s to %s is a palindrome ", initial, result);
         } else {
-            System.out.printf(" %s is not a palindrome", result);
-
+            System.out.printf(" %s to %s is not a palindrome", initial, result);
         }
-    }}
+    }
+}
