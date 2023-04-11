@@ -2,7 +2,7 @@ package assignments;
 
 import java.util.Scanner;
 
-public class UserLoop {
+public class LargestAndSmallestInputLoop {
     static int[] num;
     static int totalNumber;
 

@@ -8,7 +8,7 @@ public class StudentGrades {
 
         int counter = 1;
 
-        for (int i = 0; counter <= 10; counter++) {
+        for (; counter <= 10; counter++) {
             if (counter == 1) {
                 System.out.println("Enter the " + counter + "st grade");
             }
@@ -23,5 +23,7 @@ public class StudentGrades {
             }
             input.nextInt();
             }
+
+
         }
     }

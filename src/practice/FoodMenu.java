@@ -1,9 +1,38 @@
 package practice;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class FoodMenu {
+    String foodType;
+    int[] foodPrice;
+
+
+    public FoodMenu() {
+        String[] food = {"Jollof Rice", "Beans", "Yam", "Plantain", "Zobo", "Fried Rice", "Carbonated Drinks", "Meat/beef", "Fish", "Chicken", "Turkey"};
+        int[] price = {1000, 500, 1500, 600, 2000};
+
+
+        foodType = Arrays.toString(food);
+        foodPrice = price;
+
+        if (foodType == food[0]) {
+            System.out.println(price[0]);
+        }else if(foodType == food[2]) {
+            System.out.println(price[0]);
+        }else if(foodType == food[5]){
+            System.out.println(price[0]);
+        }else if(foodType == food[1]) {
+            System.out.println(food[1]);
+        }
+
+    }
+
     public static void main(String[] args) {
+
+        new FoodMenu();
+
+
 
         System.out.println("********************* welcome to our restaurant **********************");
         System.out.println("*********************** please make your order ***********************");
@@ -24,26 +53,12 @@ public class FoodMenu {
         System.out.println("*****************************Exit*************************************");
 
 
+        System.out.println("Select from our menu");
         Scanner input = new Scanner(System.in);
-        System.out.println(" please place your order");
-        String order = input.nextLine();
-       // StringBuilder serve = new StringBuilder();
-
-        for (int i = order.length(); i > 0 ; i++ );{
+        String foodType = input.nextLine();
 
 
-        }  /*  int jollofrice = 1000;
-    int beans = 500;
-    int yam = 1000;
-    int plantain = 500;
-    int zobo = 1500;
-    int friedrice = 1000;
-    int carbonateddrinks = 500;
-    int meat = 600;
-    int fish = 500;
-    int chicken = 1500;
-    int turkey = 2000;
-*/
 
+    }
 
-}}
+}
